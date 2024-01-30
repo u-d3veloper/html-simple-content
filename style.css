@@ -1,0 +1,101 @@
+html{
+    margin: 0;
+}
+img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+.banner{
+    width: 100%;
+}
+h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+p,a{
+    font-family: 'Lato', sans-serif;
+}
+.redirect{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.redirect>a{
+    background-color: rgb(18, 147, 207);
+    margin: 50px;
+    padding: 12px 20px;
+    border-radius: 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav{
+    background-color: rgb(18, 147, 207);
+    padding: 12px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: 10%;
+
+}
+nav>h2{
+   color: #fff;
+   text-align: center;
+}
+nav li{
+    color: #fff;
+}
+nav li::marker{
+    color: rgb(85, 255, 161);
+}
+nav a{
+    text-decoration: none;
+    transition: 1.5 ease-in-out;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+section{
+    margin: 10%;
+}
+
+section:nth-child(even){
+    border-bottom: 1px solid blue;
+}
+section:nth-child(odd){
+    border-bottom: 1px solid gray;
+}
+.cognitique{
+    color: rgb(18, 147, 207);
+}
+.cognitique:hover + .cognitique{
+    color: rgb(45, 156, 82);
+}
+footer{
+    padding: 10px;
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+}
+footer p{
+    color: #fff;
+}
+footer h2{
+    color: #fff;
+}
+footer a{
+    color: rgb(18, 147, 207);
+}
+
+.vote{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.item-etoile:hover{
+    color: #FFD43B;
+}
+.item-etoile:has(~ .item-etoile:hover){
+    color: #FFD43B;
+}
+.active{
+    color: #FFD43B;
+}
