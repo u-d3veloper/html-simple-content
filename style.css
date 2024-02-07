@@ -1,10 +1,17 @@
 html{
-    margin: 0;
+  margin: 0;
+  padding:0;
+  background: url(./back.JPG) no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
 }
 img {
     height: 300px;
     width: 100%;
     object-fit: cover;
+}
+header{
+    text-align: center;
 }
 .banner{
     width: 100%;
@@ -56,6 +63,9 @@ nav a:hover{
 }
 section{
     margin: 10%;
+    background-color: #fff;
+    padding: 12px 20px;
+    border-radius: 0.3px;
 }
 
 section:nth-child(even){
@@ -98,4 +108,16 @@ footer a{
 }
 .active{
     color: #FFD43B;
+}
+.button-up{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2%;
+
+    font-size: 2em;
+}
+
+.button-up a{
+    color: #fff;
 }
